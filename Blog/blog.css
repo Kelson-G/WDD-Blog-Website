@@ -1,0 +1,186 @@
+/* Import Lora from Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@700&display=swap');
+
+:root {
+  --gold: #EFC69B;
+  --red: #AF1B3F;
+  --dark: #473144;
+}
+
+body {
+  position: relative;
+  font-family: Helvetica, Arial, sans-serif;
+  background: #fff;
+  color: var(--dark);
+  margin: 0;
+  padding: 0;
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Lora', Impact, serif;
+  color: var(--red);
+  margin-top: 0;
+}
+
+header {
+  background: #fff;
+  color: var(--dark);
+  text-align: center;
+  border-bottom: 2px solid var(--gold);
+  padding: 2rem 0 0.5rem 0;
+}
+
+header h1 {
+  margin-bottom: 0.5rem;
+}
+
+nav ul {
+  list-style: none;
+  padding: 5px 2rem 0.5rem 0;
+  margin: 0;
+  display: flex;
+  justify-content: flex-end;
+  gap: 2rem;
+  border-top: 1px solid var(--gold);
+  padding-top: 0.5rem;
+  font-size: 1.1rem;
+}
+
+nav a {
+  color: var(--red);
+  text-decoration: none;
+  font-weight: normal;
+  transition: color 0.2s;
+}
+
+nav a:hover, nav a[aria-current="page"] {
+  text-decoration: underline;
+}
+
+main.layout {
+  display: flex;
+  max-width: 1100px;
+  margin: 2rem auto;
+  gap: 2rem;
+  align-items: flex-start;
+  padding: 0 1rem;
+}
+
+.articles {
+  flex: 2 1 0;
+}
+
+.sidebar {
+  flex: 1 1 250px;
+  max-width: 250px;
+}
+
+.filter-box {
+  border: 1px solid var(--gold);
+  padding: 1rem;
+  min-height: 200px;
+  background: #fff;
+  color: var(--dark);
+}
+
+article {
+  display: flex;
+  flex-direction: row;
+  background: #f9f6f2;
+  border-left: 6px solid var(--gold);
+  margin-bottom: 2rem;
+  padding: 1.5rem 1rem;
+  box-shadow: 0 2px 8px rgba(71,49,68,0.05);
+  gap: 2rem;
+}
+
+article .meta {
+  min-width: 110px;
+  text-align: right;
+  color: var(--dark);
+  font-size: 1rem;
+  margin-right: 1rem;
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
+  justify-content: flex-start;
+}
+
+article .meta time {
+  color: var(--dark);
+  font-size: 1.05em;
+  font-weight: bold;
+  margin-bottom: 0.5em;
+  display: block;
+}
+
+article .meta .stars {
+  color: var(--gold);
+  font-size: 1.1em;
+  margin-top: 0.5em;
+}
+
+article .content {
+  flex: 1 1 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+article h2 {
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+  color: var(--red);
+  font-size: 1.3em;
+}
+
+article img {
+  max-width: 180px;
+  width: 100%;
+  height: auto;
+  display: block;
+  margin: 0.5rem 0 1rem 0;
+  box-shadow: 0 2px 8px rgba(71,49,68,0.10);
+}
+
+article p {
+  margin: 0;
+  color: var(--dark);
+}
+
+a {
+  color: var(--red);
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+footer {
+  background: var(--dark);
+  color: var(--gold);
+  padding: 1rem 0.5rem;
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.skiptocontent a {
+  position: absolute;
+  left: 5px;
+  top: -32px;
+  background: var(--red);
+  color: #fff;
+  padding: 8px 16px;
+  z-index: 2000;
+  text-decoration: none;
+  border-radius: 0 0 8px 8px;
+  font-weight: bold;
+  transition: top 0.2s;
+  width: max-content; 
+}
+.skiptocontent a:focus {
+  top: 0;
+}
