@@ -166,10 +166,10 @@ footer {
   margin-top: 2rem;
 }
 
-.skiptocontent a {
+.skip-to-content a {
   position: absolute;
   left: 5px;
-  top: -32px;
+  top: -45px;   
   background: var(--red);
   color: #fff;
   padding: 8px 16px;
@@ -180,6 +180,6 @@ footer {
   transition: top 0.2s;
   width: max-content; 
 }
-.skiptocontent a:focus {
-  top: 0;
+.skip-to-content a:focus {
+  top: 0; /* Move into view when focused */
 }
